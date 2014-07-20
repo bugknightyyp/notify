@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>自定义提示框</title>
+<link rel="stylesheet" href="" />
+
+<style>
+ body{ font-size:12px; height: 2000px; }
+ *{ padding:0; margin:0;}  
+ div{border: 1px solid #ccc;}
+ </style>
+</head>
+
+<body >
+
+<div id="test" style="position: fixed; left: 0; top: 0; width: 100%; height: 100%; _position: absolute; display: none; ">
+  <div style=" position: fixed; filter:alpha(opacity=30); opacity: 0.3;background-color: #000;  top:0; left: 0; width: 100%; height: 100%; _position: absolute;zoom: 1;"></div>
+  <div style=" position: fixed; left: 50%;margin-left: -20%; top: 15%;width: 40%;background-color: #fff; _position: absolute; _top: expression( document.documentElement.scrollTop + screen.height * 0.10);"></div>
+</div>
+</body>
+</html>
+<script type="text/javascript" src="http://res.bequ.com/js/common/seajs/2.3.0/sea.js"></script>
+<script>
+seajs.config({
+  base: 'http://res.bequ.com/js/common/'
+})
+seajs.use(['jquery/1.11.1/jquery.cmd.min', '../src/dialog.cmd.min'], function($){
+   
+	var dialog = seajs.require('dialog/1.0.0/dialog.cmd.min');
+
+				 
+			var textarea = dialog('fsfsfs', {
+			});
+					
+				
+});
+</script>
+
+
+
+
+</script>
